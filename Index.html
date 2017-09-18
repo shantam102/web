@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+
+<html >
+	<head>
+		<title>Application For GEC</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+	</head>
+	<body id="top" ng-app="myApp" >
+			<div class="well" align="center" style="background-color:lightgrey padding: 1.5px" ><h1>Application For GEC</h1></div>
+				<!--<section id="banner" data-video="images/GEC2" style="height:300px">
+					<div class="inner">
+						<header>
+							<h1>Application For GEC</h1>
+							<p><br />
+							</p>
+						</header>
+						<a href="#main" class="more">Learn More</a>
+					</div>
+				</section> -->
+
+			<!-- Main -->
+						
+				<div id="main" class="container" >
+					<div >
+						<div ng-controller="AppControler" class="row"> 
+							<div class="col-sm-9">
+							<iframe style="align:left" width="850" height="480" src="https://www.youtube.com/embed/lL2PXC1fmnQ?ecver=1" frameborder="0" allowfullscreen ng-model="frame" id="frame"></iframe>
+							</div>
+							<div class="col-sm-3" style="overflow:scroll; height:480px"> 
+							<table  >
+							  <tr ng-repeat="x in video" class="info" style="height:50px; width:300px">
+								<td ng-click="append(x.id)" >{{ x.desc }}</td>
+								
+							  </tr>
+							</table>
+							</div>
+						</div>
+					<!-- Boxes -->
+						<!-- <div class="thumbnails">
+
+							<div class="box">
+								<a href="#" class="image fit"> <img src="images/g2.jpg" alt="" />
+								<div class="inner">
+									<h3> Video Popup </h3>
+									<p> This tab is created for playback checking.</p>	
+								</div>
+							</div>
+
+							<div class="box">
+								<a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="images/g2.jpg" alt="" /></a>
+								<div class="inner">
+									<h3>Secondary Disk File Fetch</h3>
+									<p>Checking the playback options</p><br/><br/>
+									<a href="F:\Torrents\Movies\Petes.Dragon.2016.720p.BRRip.x264.AAC-ETRG\Pete.MP4" class="button style2 fit" data-poptrox="youtube,800x400">Watch</a>
+								</div>
+							</div>
+
+						<div class="box">
+								<a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="images/g2.jpg" alt=""  /></a>
+								<div class="inner">
+									<h3>Sample Tab</h3>
+									<p>Fetching from JSON file</p><br/><br/>
+									<a href="#" class="button style3 fit" data-poptrox="youtube,800x400" id="a3">Watch</a>
+								</div>
+							</div> 
+
+							
+
+						</div> -->
+						
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<h2> Infosys Limited</h2>
+						<p> </p>
+
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Infosys India Private Limited <a href="https://infosys.com">Infosys</a></p>
+					</div>
+				</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/angular.min.js"></script>
+			
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/tabs.js"></script>
+
+	</body>
+</html>
